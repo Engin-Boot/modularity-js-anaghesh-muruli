@@ -2,13 +2,13 @@ const index = require("./index");
 
 function GetallColorCodedPairs() {
   var i;
-  var pairColorCode = [];
+  var colorCodePair = [];
   for (i = 1; i < 26; i++) {
     var colorCombo ={}
     colorCombo.number = i;
     colorCombo.color = index.GetColorFromPairNumber(i);
-    pairColorCode.push(colorCombo);  
+    colorCodePair.push(colorCombo);  
   }
-  return pairColorCode;
+  return colorCodePair;
 }
 //console.log(GetallPairs().toString());
