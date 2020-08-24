@@ -23,7 +23,7 @@ function GetColorFromPairNumber(pairNumber) {
     colorPair.minor = MinorColors[zeroBasedPairNumber % MinorColors.length];
     return colorPair
 }
-
+console.log(GetColorFromPairNumber(1))
 function GetPairNumberFromColors(majorColor, minorColor) {
     let majorIndex = 0;
     let minorIndex = 0;
@@ -39,4 +39,5 @@ function GetPairNumberFromColors(majorColor, minorColor) {
     }
     return majorIndex * MinorColors.length + minorIndex + 1;
 }
+
 module.exports = {GetPairNumberFromColors, GetColorFromPairNumber}
